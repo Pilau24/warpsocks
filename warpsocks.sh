@@ -5,7 +5,7 @@ if dpkg -l | grep -q "curl"; then
     echo "curl is installed."
 else
     echo "curl is not installed."
-        sudo apt-get update && sudo apt-get install curl
+        sudo apt-get update && sudo apt-get install curl -y
 fi
 
 # install wgcf
