@@ -1,0 +1,12 @@
+[Unit]
+Description=WireProxy Service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/wireproxy -c /root/wireproxy.conf
+WorkingDirectory=/root
+User=root
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
