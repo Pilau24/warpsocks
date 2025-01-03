@@ -1,12 +1,7 @@
 #!/bin/bash
 
-# Check if the curl package is installed
-if dpkg -l | grep -q "curl"; then
-    echo "curl is installed."
-else
-    echo "curl is not installed."
-        sudo apt-get update && sudo apt-get install curl -y
-fi
+# install curl
+sudo apt install curl -y
 
 # install wgcf
 curl -fsSL https://git.io/wgcf.sh | bash
